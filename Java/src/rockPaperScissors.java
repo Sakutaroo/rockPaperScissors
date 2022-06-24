@@ -33,7 +33,7 @@ public class rockPaperScissors {
             System.out.println("You lose !");
             return true;
         } else {
-            System.out.println("Draw !");
+            System.out.println("It's a draw ! Try again.");
             return false;
         }
     }
