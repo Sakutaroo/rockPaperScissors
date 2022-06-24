@@ -9,8 +9,12 @@ def main():
     if len(argv) != 1 and len(argv) != 2:
         print("Arguments error : retry with -h")
         return 1
-    if "-h" in argv:
-        display_usage()
+    if len(argv) == 2:
+        if "-h" in argv:
+            display_usage()
+        else:
+            print("Arguments error : retry with -h")
+            return 1
     else:
         launch_game()
     return 0
