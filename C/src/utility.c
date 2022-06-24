@@ -17,8 +17,10 @@ int check_usage(const char *arg)
         printf("USAGE\n\t./rockPaperScissors\n");
         printf("DESCRIPTION\n\tThis program is a rock paper scissors game.\n");
         return 0;
+    } else {
+        printf("Arguments error : retry with -h\n");
+        return 1;
     }
-    return 1;
 }
 
 int search_weapon_index(char *buffer)
