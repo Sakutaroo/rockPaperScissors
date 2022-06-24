@@ -1,0 +1,18 @@
+#!/usr/bin/env python3
+
+from sys import argv, exit
+from src.usage import display_usage
+from src.game import launch_game
+
+def main():
+    if len(argv) != 1 and len(argv) != 2:
+        print("Arguments error : retry with -h")
+        return 1
+    if "-h" in argv:
+        display_usage()
+    else:
+        launch_game()
+    return 0
+
+if __name__ == "__main__":
+    exit(main())
