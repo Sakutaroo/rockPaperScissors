@@ -4,6 +4,7 @@ from sys import argv, exit
 from src.usage import display_usage
 from src.game import launch_game
 
+
 def main():
     if len(argv) != 1 and len(argv) != 2:
         print("Arguments error : retry with -h")
@@ -13,6 +14,7 @@ def main():
     else:
         launch_game()
     return 0
+
 
 if __name__ == "__main__":
     exit(main())
