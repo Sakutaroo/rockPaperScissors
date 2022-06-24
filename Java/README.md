@@ -10,4 +10,4 @@ Execution :
 
 Help :
 
-```./rockPaperScissors -h```
+```java rockPaperScissors -h```
