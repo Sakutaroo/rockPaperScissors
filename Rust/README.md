@@ -6,4 +6,4 @@ Execution :
 
 Help :
 
-```./main help```
+```cargo run help``
